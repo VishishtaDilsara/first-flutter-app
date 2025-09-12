@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 23, 3, 57)),
       ),
-      home: const MyHomePage(title: 'Vishishta rg 2002'),
+      home: const MyHomePage(title: 'Vishishta rg '),
     );
   }
 }
