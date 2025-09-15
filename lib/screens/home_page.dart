@@ -28,7 +28,19 @@ class HomePage extends StatelessWidget {
                width: 200,
                fit: BoxFit.cover,
                ),
-            Image.asset('assets/images/thumbnail1.png' , height: 200, width: 200),   
+            Image.asset('assets/images/thumbnail1.png' , height: 200, width: 200),  
+            SizedBox(height: 20),
+            Text('Row'),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Icon(Icons.home),
+                Icon(Icons.search),
+                Icon(Icons.settings),
+                Icon(Icons.call),
+                ],
+              
+              )
             ],
           ),
       ),  
