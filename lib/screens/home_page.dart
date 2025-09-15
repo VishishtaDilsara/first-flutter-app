@@ -9,9 +9,16 @@ class HomePage extends StatelessWidget {
       backgroundColor: Colors.deepPurpleAccent,
       appBar: AppBar(
         backgroundColor: Colors.greenAccent,
-        title: Text('Home Page'),
+        title: Center(child: Text('Home Page', style: TextStyle(color: Colors.blueGrey, ),),), 
         ),
-      body: Text('This is our body'),  
+      body: Center(child: Text('This is our body', 
+      style: TextStyle(
+        fontSize: 30 ,
+        fontWeight: FontWeight.w900 , 
+        backgroundColor: Colors.limeAccent
+        ), 
+        )
+        ),  
     );
   }
 }
