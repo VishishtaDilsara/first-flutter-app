@@ -205,6 +205,41 @@ class HomePage extends StatelessWidget {
                 ),
               ),
 
+              SizedBox(height: 20),
+
+              Text('Chip & Padding'),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: EdgeInsetsGeometry.symmetric(horizontal: 5),
+                    child: Chip(
+                      label: Text('Adventure'),
+                      deleteIcon: Icon(Icons.close),
+                      onDeleted: () {
+                        print('Deleted');
+                      },
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsGeometry.symmetric(horizontal: 5),
+                    child: Chip(label: Text('Horror')),
+                  ),
+                  Padding(
+                    padding: EdgeInsetsGeometry.symmetric(horizontal: 5),
+                    child: Chip(label: Text('Thriller')),
+                  ),
+                ],
+              ),
+
+              SizedBox(height: 20),
+
+              Text('Circle Avatar'),
+              CircleAvatar(
+                radius: 40,
+                backgroundImage: NetworkImage('https://tse1.mm.bing.net/th/id/OIP.wBMp4cKdcuUYNQpa332M1QHaHl?rs=1&pid=ImgDetMain&o=7&rm=3'),
+                ),
+
               SizedBox(height: 500),
             ],
           ),
