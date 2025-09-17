@@ -1,4 +1,5 @@
 import 'package:first_flutter_app/screens/home_page.dart';
+import 'package:first_flutter_app/screens/screen1.dart';
 import 'package:first_flutter_app/screens/statefull_ex.dart';
 import 'package:flutter/material.dart';
 
@@ -13,9 +14,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: StateFullWidgetExample(),
-    );
+    return MaterialApp(debugShowCheckedModeBanner: false, home: Screen1());
   }
 }
