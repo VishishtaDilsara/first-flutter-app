@@ -1,4 +1,5 @@
 import 'package:first_flutter_app/screens/home_page.dart';
+import 'package:first_flutter_app/screens/listview_explain.dart';
 import 'package:first_flutter_app/screens/screen1.dart';
 import 'package:first_flutter_app/screens/stack_explain.dart';
 import 'package:first_flutter_app/screens/statefull_ex.dart';
@@ -15,6 +16,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: StackExplain());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: ListViewExplain(),
+    );
   }
 }
