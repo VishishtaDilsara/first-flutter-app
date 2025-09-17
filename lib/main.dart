@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/screens/gridview_builder.dart';
 import 'package:first_flutter_app/screens/home_page.dart';
 import 'package:first_flutter_app/screens/listview_explain.dart';
 import 'package:first_flutter_app/screens/screen1.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ListViewExplain(),
+      home: GridViewExplainer(),
     );
   }
 }
