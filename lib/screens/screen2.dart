@@ -1,3 +1,4 @@
+import 'package:first_flutter_app/screens/screen1.dart';
 import 'package:flutter/material.dart';
 
 class Screen2 extends StatelessWidget {
@@ -13,9 +14,21 @@ class Screen2 extends StatelessWidget {
         foregroundColor: Colors.white,
       ),
       body: Center(
-        child: Text(
-          text,
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              text,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+
+            FilledButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('Back'),
+            ),
+          ],
         ),
       ),
     );
